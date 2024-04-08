@@ -33,3 +33,19 @@ public class NaturalNumbers {
         }
     }
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class SumOfDigits {
+    public static void main(String[] args) {
+        System.out.println(sum(666));
+    }
+
+    public static int sum(int number) {
+        if (number / 10 == 0) {
+            return number;
+        } else {
+            int currentSum = number % 10;
+            return currentSum += sum(number/10);
+        }
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
