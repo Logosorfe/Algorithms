@@ -3,8 +3,20 @@ public class NaturalNumbers {
 
     public static void main(String[] args) {
         NaturalNumbers naturalNumbers = new NaturalNumbers();
-        String result = naturalNumbers.isEven(2048, naturalNumbers);
-        System.out.println("Is the number equals 2 raised to the power of " +
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a natural number");
+        int natural = scanner.nextInt();
+
+        while (natural <= 0) {
+            System.out.println("Not a natural number");
+            System.out.println("Enter a natural number");
+            natural = scanner.nextInt();
+        }
+
+        String result = naturalNumbers.isEven(natural, naturalNumbers);
+
+        System.out.println("Is the natural number equals 2 raised to the power of " +
                 (naturalNumbers.count + 1) + " - " + result);
         System.out.println("The number of cycles it took for recursive method is - " +
                 naturalNumbers.count);
