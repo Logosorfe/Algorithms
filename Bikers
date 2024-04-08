@@ -1,0 +1,18 @@
+У вас есть 50 мотоциклов с полным баком, которого хватает на 100 км езды. Все мотоциклы в начале пути находятся условно в одной точке. 
+Вопрос: используя все мотоциклы, какое максимальное расстояние можно проехать?
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class BikesPath {
+    public static void main(String[] args) {
+        int bikes =50;
+        int fuel =100;
+        System.out.println(road(bikes,fuel));
+    }
+    public static double road(int bikes,int fuel){
+        if (bikes==0){
+            return 0;
+        }else {
+            double sum = 0;
+            return sum += ((double)fuel/bikes) + road(bikes-1,fuel);
+        }
+    }
+}
