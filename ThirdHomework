@@ -82,3 +82,24 @@ public class FibonacciNumbersPrint {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  Напишите рекурсивный метод, который проверяет, является ли строка палиндромом.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class Palindrome {
+
+    public static void main(String[] args) {
+        String originalText = "Was it a cat I saw";
+        String tempText = originalText.replace(" ", "");
+        StringBuilder text = new StringBuilder(tempText.toUpperCase());
+        checkForPalindrome(text);
+    }
+
+    public static void checkForPalindrome(StringBuilder str) {
+        if (str.length() <= 1) {
+            System.out.println("Text is palindrome");
+        } else if (str.charAt(0) == str.charAt(str.length() - 1)) {
+            str.deleteCharAt(str.length() - 1);
+            str.deleteCharAt(0);
+            checkForPalindrome(str);
+        } else {
+            System.out.println("Text is not palindrome");
+        }
+    }
+}
