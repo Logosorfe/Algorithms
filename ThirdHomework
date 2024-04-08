@@ -1,0 +1,23 @@
+public class NaturalNumbers {
+    int count = 0;
+
+    public static void main(String[] args) {
+        NaturalNumbers naturalNumbers = new NaturalNumbers();
+        String result = naturalNumbers.isEven(2048, naturalNumbers);
+        System.out.println("Is the number equals 2 raised to the power of " +
+                (naturalNumbers.count + 1) + " - " + result);
+        System.out.println("The number of cycles it took for recursive method is - " +
+                naturalNumbers.count);
+    }
+
+    public String isEven(int number, NaturalNumbers obj) {
+        if ((double) number / 2 == 1.0) {
+            return "YES";
+        } else if (number % 2 != 0 && (double) number / 2 != 1.0) {
+            return "NO";
+        } else {
+            obj.count++;
+            return isEven(number / 2, obj);
+        }
+    }
+}
