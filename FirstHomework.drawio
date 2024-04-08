@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-08T19:27:05.617Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="rMMMOVwR8ERI7pMR6XdV" version="24.2.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-04-08T19:29:08.482Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="sTcy3lw0G3odqThQT9e4" version="24.2.2" type="github" pages="2">
   <diagram name="Page-1" id="fB6h32neheZBJvaYyz-M">
     <mxGraphModel dx="1342" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -68,7 +68,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="vNHSJ5Cno3rLMGNHz-jm" name="Page-2">
-    <mxGraphModel dx="872" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1744" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -76,19 +76,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wYb_8j9pllb6LR2uKTDN-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="365.5" y="10" width="120" height="80" as="geometry" />
+          <mxGeometry x="375.5" y="510" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="CAbDBLqzX8sOtJvfaLqi-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wYb_8j9pllb6LR2uKTDN-4" target="CAbDBLqzX8sOtJvfaLqi-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wYb_8j9pllb6LR2uKTDN-4" value="ARR ={3,6,4,7,2,1,9};&lt;div&gt;SQUARESUM = 0&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="353" y="180" width="145" height="60" as="geometry" />
+          <mxGeometry x="363" y="680" width="145" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yib6RBHgo7TCA4eGr_tR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="CAbDBLqzX8sOtJvfaLqi-3" target="yib6RBHgo7TCA4eGr_tR-4" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="200" y="590" as="targetPoint" />
+            <mxPoint x="210" y="1090" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="426" y="500" />
+              <mxPoint x="436" y="1000" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -96,20 +96,23 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CAbDBLqzX8sOtJvfaLqi-3" value="I = 0, I &amp;lt; ARR.LENGTH" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="343.25" y="310" width="164.5" height="80" as="geometry" />
+          <mxGeometry x="353.25" y="810" width="164.5" height="80" as="geometry" />
         </mxCell>
         <mxCell id="yib6RBHgo7TCA4eGr_tR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="yib6RBHgo7TCA4eGr_tR-4" target="CAbDBLqzX8sOtJvfaLqi-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="190" y="350" />
+              <mxPoint x="200" y="850" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="yib6RBHgo7TCA4eGr_tR-4" value="SQUARESUM =&lt;br&gt;ARR[I] * ARR[I] + SQUARESUM;&lt;div&gt;I++&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="130" y="470" width="120" height="60" as="geometry" />
+          <mxGeometry x="140" y="970" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yib6RBHgo7TCA4eGr_tR-6" value="PRINT&lt;br&gt;SQUARESUM" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
-          <mxGeometry x="610" y="450" width="120" height="80" as="geometry" />
+          <mxGeometry x="620" y="950" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KIHIz7U6yjdAbqUYDTLf-1" value="&lt;span style=&quot;font-family: NaMU, Arial, sans-serif; font-size: 15px; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;Реализовать алгоритм, который будет находить сумму&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: NaMU, Arial, sans-serif; font-size: 15px; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;квадратов всех элементов массива! {3, 6, 4, 7, 2, 1, 9}&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: NaMU, Arial, sans-serif; font-size: 15px; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;Задание считается выполненным если: использован&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: NaMU, Arial, sans-serif; font-size: 15px; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;”Линейный подход” и алгоритм соответствует характеристикам&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: NaMU, Arial, sans-serif; font-size: 15px; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;алгоритма и выдает верный результат.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="470" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
