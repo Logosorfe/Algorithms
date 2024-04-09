@@ -58,24 +58,39 @@ public class SumOfDigits {
 Напишите рекурсивный метод, который выводит на экран числа Фибоначчи до N-ого элемента.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 public class FibonacciNumbersPrint {
-    int n;
+    private int n;
+    final static int firstNumber = 0;
+    final static int secondNumber = 1;
 
     public FibonacciNumbersPrint(int nNumber) {
         this.n = nNumber;
     }
 
-    public static void main(String[] args) {
-        FibonacciNumbersPrint fibonacciNumbersPrint = new FibonacciNumbersPrint(3);
-        System.out.println("Row of numbers for " + fibonacciNumbersPrint.n + "! is:");
-        System.out.println(fibonacciNumbersPrint.printNumbers(fibonacciNumbersPrint.n));
+    public int getN() {
+        return n;
     }
 
-    public int printNumbers(int number) {
-        if (number == 1) {
-            return 1;
+    public static void main(String[] args) {
+        FibonacciNumbersPrint fibonacciNumbersPrint = new FibonacciNumbersPrint(55);
+        System.out.println("Fibonacci numbers up to this number - " +
+                fibonacciNumbersPrint.getN() + ":");
+        System.out.println(fibonacciNumbersPrint.printNumbers(fibonacciNumbersPrint.n,
+                firstNumber, secondNumber));
+    }
+
+    public int printNumbers(int number, int a, int b) {
+        if (a == 0) {
+            System.out.print(a + ", ");
+        }
+        if (number == a + b) {
+            System.out.print(b + ", ");
+            return number;
         } else {
-            System.out.print(number + ", ");
-            return printNumbers(number - 1);
+            System.out.print(b + ", ");
+            int current = a;
+            a = b;
+            b = b + current;
+            return printNumbers(number, a, b);
         }
     }
 }
