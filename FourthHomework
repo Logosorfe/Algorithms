@@ -1,1 +1,12 @@
-
+Расставьте в алфавитном порядке буквы. Разрешается использование техники Разделяй и властвуй. Полученные данные напечатайте.
+На вход строка: "poiuytrewqlkjhgfdsamnbvcxz". На выходе должно быть: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class Sorting {
+    public static void main(String[] args) {
+        String alphabet = "poiuytrewqlkjhgfdsamnbvcxz";
+        char[] string= alphabet.toCharArray();
+        Arrays.sort(string);
+        alphabet=Arrays.toString(string).toUpperCase();
+        System.out.println(alphabet.replace(", ",""));
+    }
+}
